@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Resume_Analyzer.DataAccess;
 using Resume_Analyzer.DataAccess.Models;
+using Resume_Analyzer.Service.IServices;
 using System;
 using System.Text;
 namespace Resume_Analyzer.API
@@ -38,6 +39,8 @@ namespace Resume_Analyzer.API
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<IUserService, UserService>();
 
             var app = builder.Build();
 

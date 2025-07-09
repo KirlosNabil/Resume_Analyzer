@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Resume_Analyzer.DataAccess\Resume_Analyzer.DataAccess.csproj" />
     <ProjectReference Include="..\Resume_Analyzer.Service\Resume_Analyzer.Service.csproj" />
   </ItemGroup>
