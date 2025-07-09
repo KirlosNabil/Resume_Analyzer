@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using Resume_Analyzer.DataAccess;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.Service.IServices;
+using Resume_Analyzer.Service.Middlewares;
 using System;
 using System.Text;
 namespace Resume_Analyzer.API
@@ -51,6 +52,8 @@ namespace Resume_Analyzer.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseAuthentication();
             app.UseAuthorization();

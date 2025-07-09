@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.Service.DTOs;
 using Resume_Analyzer.Service.IServices;
+using ServiceLayer.Exceptions;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -45,7 +46,9 @@ public class UserService : IUserService
         var result = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, false, false);
 
         if (!result.Succeeded)
-            throw new Exception("Invalid credentials");
+        {
+            throw new BadRequestException("Invalid email or password");
+        }
 
         var user = await _userManager.FindByEmailAsync(loginDto.Email);
         var roles = await _userManager.GetRolesAsync(user);
