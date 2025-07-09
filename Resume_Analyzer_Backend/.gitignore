@@ -1,18 +1,14 @@
-# Build output
 bin/
 obj/
-
-# Visual Studio files
 .vs/
 *.user
 *.suo
-
-# Logs and temp
-*.log
-*.tmp
 *.pdb
 *.cache
-
-# Windows/macOS
+*.log
+*.tmp
 Thumbs.db
 .DS_Store
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
