@@ -6,8 +6,9 @@ using Resume_Analyzer.DataAccess;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.Service.IServices;
 using Resume_Analyzer.Service.Middlewares;
-using System;
+using Resume_Analyzer.Service.Services;
 using System.Text;
+
 namespace Resume_Analyzer.API
 {
     public class Program
@@ -17,9 +18,24 @@ namespace Resume_Analyzer.API
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+            })
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
             .AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
@@ -33,15 +49,12 @@ namespace Resume_Analyzer.API
                 };
             });
 
-            builder.Services.AddIdentity<User, IdentityRole>()
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
-
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IResumeService, ResumeService>();
 
             var app = builder.Build();
 
@@ -57,7 +70,6 @@ namespace Resume_Analyzer.API
 
             app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.MapControllers();
 

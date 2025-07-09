@@ -10,23 +10,20 @@ namespace Resume_Analyzer.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-
         public UserController(IUserService userService)
         {
             _userService = userService;
         }
-
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDTO dto)
+        public async Task<IActionResult> Register([FromBody] RegisterDTO registerDto)
         {
-            await _userService.Register(dto);
-            return Ok();
+            await _userService.Register(registerDto);
+            return Ok("Registered Successfully");
         }
-
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDTO dto)
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
         {
-            var token = await _userService.Login(dto);
+            var token = await _userService.Login(loginDto);
             return Ok(token);
         }
     }

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Resume_Analyzer.Service\Resume_Analyzer.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resumes\" />
+  </ItemGroup>
+
 </Project>
