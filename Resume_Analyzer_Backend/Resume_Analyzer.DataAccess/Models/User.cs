@@ -11,5 +11,6 @@ namespace Resume_Analyzer.DataAccess.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public Resume Resume { get; set; }
     }
 }
