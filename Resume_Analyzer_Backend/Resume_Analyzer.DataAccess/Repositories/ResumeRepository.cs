@@ -21,15 +21,21 @@ namespace Resume_Analyzer.DataAccess.Repositories
         }
         public async Task<Resume> GetResumeById(int resumeId)
         {
-            return await _dbContext.Resumes.FirstOrDefaultAsync(r => r.Id == resumeId);
+            return await _dbContext.Resumes.Include(u => u.User)
+                .FirstOrDefaultAsync(r => r.Id == resumeId);
         }
         public async Task<Resume> GetUserResume(string userId)
         {
-            return await _dbContext.Resumes.FirstOrDefaultAsync(r => r.UserId == userId);
+            return await _dbContext.Resumes.Include(u => u.User)
+                .FirstOrDefaultAsync(r => r.UserId == userId);
         }
         public async Task UpdateResume(Resume resume)
         {
              _dbContext.Resumes.Update(resume);
+        }
+        public async Task<bool> CheckIfResumeUploaded(string userId)
+        {
+            return await _dbContext.Resumes.AnyAsync(u => u.UserId == userId);
         }
     }
 }

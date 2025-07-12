@@ -13,5 +13,6 @@ namespace Resume_Analyzer.DataAccess.Repositories
         public Task UpdateResume(Resume resume);
         public Task<Resume> GetUserResume(string userId);
         public Task<Resume> GetResumeById(int resumeId);
+        public Task<bool> CheckIfResumeUploaded(string userId);
     }
 }

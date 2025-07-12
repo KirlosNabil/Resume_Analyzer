@@ -10,7 +10,6 @@ namespace Resume_Analyzer.Service.Services
 {
     public class ResumeParserService : IResumeParserService
     {
-
         public async Task<string> ParseResume(string resumePath)
         {
             StringBuilder text = new StringBuilder();
