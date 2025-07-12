@@ -32,5 +32,12 @@ namespace Resume_Analyzer.API.Controllers
             ResumeDTO resume = await _resumeService.GetResume(userId);
             return Ok(resume);
         }
+        [HttpPut("update-resume")]
+        public async Task<IActionResult> UpdateResume([FromForm] ResumeUploadDTO resumeUploadDto)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _resumeService.UpdateResume(resumeUploadDto.ResumeFile, userId);
+            return Ok("Resume updated successfully");
+        }
     }
 }

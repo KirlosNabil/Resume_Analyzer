@@ -13,5 +13,6 @@ namespace Resume_Analyzer.Service.IServices
     {
         public Task UploadResume(IFormFile resumeFile, string userId);
         public Task<ResumeDTO> GetResume(string userId);
+        public Task UpdateResume(IFormFile resumeFile, string userId);
     }
 }

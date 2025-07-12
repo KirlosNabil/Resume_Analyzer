@@ -73,5 +73,38 @@ namespace Resume_Analyzer.Service.Services
             }
             return resumeDTO;
         }
+        public async Task UpdateResume(IFormFile resumeFile, string userId)
+        {
+            if (resumeFile == null || resumeFile.Length == 0)
+            {
+                throw new BadRequestException("Invalid file");
+            }
+            if (!(await _resumeRepository.CheckIfResumeUploaded(userId)))
+            {
+                throw new BadRequestException("No resume uploaded to update");
+            }
+            var fileExtension = Path.GetExtension(resumeFile.FileName);
+            if (fileExtension.ToLower() != ".pdf")
+            {
+                throw new BadRequestException("Only PDF files are allowed.");
+            }
+            var resumesPath = Path.Combine(Directory.GetCurrentDirectory(), "Resumes");
+            var fileName = $"{userId}{fileExtension}";
+            var filePath = Path.Combine(resumesPath, fileName);
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await resumeFile.CopyToAsync(stream);
+            }
+
+            string content = await _resumeParserService.ParseResume(filePath);
+            var resume = await _resumeRepository.GetUserResume(userId);
+            resume.Content = content;
+            resume.UploadTime = DateTime.Now;
+            await _resumeRepository.UpdateResume(resume);
+        }
     }
 }
