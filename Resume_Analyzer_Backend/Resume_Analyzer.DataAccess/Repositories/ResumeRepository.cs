@@ -18,6 +18,7 @@ namespace Resume_Analyzer.DataAccess.Repositories
         public async Task AddResume(Resume resume)
         {
             await _dbContext.Resumes.AddAsync(resume);
+            await _dbContext.SaveChangesAsync();
         }
         public async Task<Resume> GetResumeById(int resumeId)
         {
@@ -32,6 +33,7 @@ namespace Resume_Analyzer.DataAccess.Repositories
         public async Task UpdateResume(Resume resume)
         {
              _dbContext.Resumes.Update(resume);
+            await _dbContext.SaveChangesAsync();
         }
         public async Task<bool> CheckIfResumeUploaded(string userId)
         {

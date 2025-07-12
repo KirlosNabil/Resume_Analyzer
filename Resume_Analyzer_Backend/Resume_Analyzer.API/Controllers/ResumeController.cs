@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Resume_Analyzer.Service.DTOs;
 using Resume_Analyzer.Service.IServices;
+using Resume_Analyzer.DataAccess.Models;
 
 namespace Resume_Analyzer.API.Controllers
 {
@@ -23,6 +24,13 @@ namespace Resume_Analyzer.API.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             await _resumeService.UploadResume(resumeUploadDto.ResumeFile, userId);
             return Ok("Resume uploaded successfully");
+        }
+        [HttpGet("get-resume")]
+        public async Task<IActionResult> GetResume()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            Resume resume = await _resumeService.GetResume(userId);
+            return Ok(resume);
         }
     }
 }

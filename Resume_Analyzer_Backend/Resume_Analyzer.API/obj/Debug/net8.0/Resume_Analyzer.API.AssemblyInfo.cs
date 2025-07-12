@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Resume_Analyzer.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+216a064062935ada92cf8e90acaabbc3f70f3075")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05252470c9babbe331e65a278487e3efb14c5ae1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Resume_Analyzer.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Resume_Analyzer.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

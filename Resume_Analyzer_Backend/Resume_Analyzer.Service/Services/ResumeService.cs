@@ -58,5 +58,14 @@ namespace Resume_Analyzer.Service.Services
             Resume resume = await CreateResume(userId, content);
             await _resumeRepository.AddResume(resume);
         }
+        public async Task<Resume> GetResume(string userId)
+        {
+            Resume resume = await _resumeRepository.GetUserResume(userId);
+            if(resume == null)
+            {
+                throw new NotFoundException("Resume not found");
+            }
+            return resume;
+        }
     }
 }
