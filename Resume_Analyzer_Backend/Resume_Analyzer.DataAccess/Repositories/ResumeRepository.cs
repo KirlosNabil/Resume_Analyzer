@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Resume_Analyzer.DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Resume_Analyzer.DataAccess.Repositories
 {
@@ -34,6 +35,15 @@ namespace Resume_Analyzer.DataAccess.Repositories
         {
              _dbContext.Resumes.Update(resume);
             await _dbContext.SaveChangesAsync();
+        }
+        public async Task DeleteUserResume(string userId)
+        {
+            var resume = await _dbContext.Resumes.FirstOrDefaultAsync(r => r.UserId == userId);
+            if (resume != null)
+            {
+                _dbContext.Resumes.Remove(resume);
+                await _dbContext.SaveChangesAsync();
+            }
         }
         public async Task<bool> CheckIfResumeUploaded(string userId)
         {

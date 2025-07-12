@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{1DF6FB54-143A-4234-9490-A35698DB57CF}|Resume_Analyzer.API\\Resume_Analyzer.API.csproj|solutionrelative:resume_analyzer.api\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|k:\\side projects\\resume_analyzer\\resume_analyzer_backend\\resume_analyzer.service\\iservices\\iresumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|solutionrelative:resume_analyzer.service\\iservices\\iresumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4FDC3D3-BBFE-4C4D-93F7-C9B9FC596BE7}|Resume_Analyzer.DataAccess\\Resume_Analyzer.DataAccess.csproj|k:\\side projects\\resume_analyzer\\resume_analyzer_backend\\resume_analyzer.dataaccess\\repositories\\resumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4FDC3D3-BBFE-4C4D-93F7-C9B9FC596BE7}|Resume_Analyzer.DataAccess\\Resume_Analyzer.DataAccess.csproj|solutionrelative:resume_analyzer.dataaccess\\repositories\\resumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4FDC3D3-BBFE-4C4D-93F7-C9B9FC596BE7}|Resume_Analyzer.DataAccess\\Resume_Analyzer.DataAccess.csproj|k:\\side projects\\resume_analyzer\\resume_analyzer_backend\\resume_analyzer.dataaccess\\irepositories\\iresumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4FDC3D3-BBFE-4C4D-93F7-C9B9FC596BE7}|Resume_Analyzer.DataAccess\\Resume_Analyzer.DataAccess.csproj|solutionrelative:resume_analyzer.dataaccess\\irepositories\\iresumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|k:\\side projects\\resume_analyzer\\resume_analyzer_backend\\resume_analyzer.service\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|solutionrelative:resume_analyzer.service\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|k:\\side projects\\resume_analyzer\\resume_analyzer_backend\\resume_analyzer.service\\iservices\\iresumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{261F2E8F-36B6-483A-9784-2A632073A08E}|Resume_Analyzer.Service\\Resume_Analyzer.Service.csproj|solutionrelative:resume_analyzer.service\\iservices\\iresumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,39 +46,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResumeService.cs",
+              "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\Services\\ResumeService.cs",
+              "RelativeDocumentMoniker": "Resume_Analyzer.Service\\Services\\ResumeService.cs",
+              "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\Services\\ResumeService.cs",
+              "RelativeToolTip": "Resume_Analyzer.Service\\Services\\ResumeService.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAAAG0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:05:11.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IResumeRepository.cs",
+              "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.DataAccess\\IRepositories\\IResumeRepository.cs",
+              "RelativeDocumentMoniker": "Resume_Analyzer.DataAccess\\IRepositories\\IResumeRepository.cs",
+              "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.DataAccess\\IRepositories\\IResumeRepository.cs",
+              "RelativeToolTip": "Resume_Analyzer.DataAccess\\IRepositories\\IResumeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:01:34.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResumeRepository.cs",
+              "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.DataAccess\\Repositories\\ResumeRepository.cs",
+              "RelativeDocumentMoniker": "Resume_Analyzer.DataAccess\\Repositories\\ResumeRepository.cs",
+              "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.DataAccess\\Repositories\\ResumeRepository.cs",
+              "RelativeToolTip": "Resume_Analyzer.DataAccess\\Repositories\\ResumeRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:01:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ResumeController.cs",
               "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.API\\Controllers\\ResumeController.cs",
               "RelativeDocumentMoniker": "Resume_Analyzer.API\\Controllers\\ResumeController.cs",
               "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.API\\Controllers\\ResumeController.cs",
               "RelativeToolTip": "Resume_Analyzer.API\\Controllers\\ResumeController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAACsAAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAmwCIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T17:43:54.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResumeService.cs",
-              "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\Services\\ResumeService.cs",
-              "RelativeDocumentMoniker": "Resume_Analyzer.Service\\Services\\ResumeService.cs",
-              "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\Services\\ResumeService.cs",
-              "RelativeToolTip": "Resume_Analyzer.Service\\Services\\ResumeService.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAuwEwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T17:43:51.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IResumeService.cs",
               "DocumentMoniker": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\IServices\\IResumeService.cs",
               "RelativeDocumentMoniker": "Resume_Analyzer.Service\\IServices\\IResumeService.cs",
               "ToolTip": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.Service\\IServices\\IResumeService.cs",
               "RelativeToolTip": "Resume_Analyzer.Service\\IServices\\IResumeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T17:43:49.415Z",
               "EditorCaption": ""

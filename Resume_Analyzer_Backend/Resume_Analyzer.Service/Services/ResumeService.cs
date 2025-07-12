@@ -106,5 +106,21 @@ namespace Resume_Analyzer.Service.Services
             resume.UploadTime = DateTime.Now;
             await _resumeRepository.UpdateResume(resume);
         }
+        public async Task DeleteResume(string userId)
+        {
+            if (!(await _resumeRepository.CheckIfResumeUploaded(userId)))
+            {
+                throw new BadRequestException("No resume uploaded to delete");
+            }
+            string fileExtension = ".pdf";
+            var resumesPath = Path.Combine(Directory.GetCurrentDirectory(), "Resumes");
+            var fileName = $"{userId}{fileExtension}";
+            var filePath = Path.Combine(resumesPath, fileName);
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
+            await _resumeRepository.DeleteUserResume(userId);
+        }
     }
 }

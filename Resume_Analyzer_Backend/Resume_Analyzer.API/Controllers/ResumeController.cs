@@ -39,5 +39,12 @@ namespace Resume_Analyzer.API.Controllers
             await _resumeService.UpdateResume(resumeUploadDto.ResumeFile, userId);
             return Ok("Resume updated successfully");
         }
+        [HttpDelete("delete-resume")]
+        public async Task<IActionResult> DeleteResume()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _resumeService.DeleteResume(userId);
+            return Ok("Resume deleted successfully");
+        }
     }
 }
