@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Resume_Analyzer.DataAccess.Models;
+using Resume_Analyzer.Service.DTOs;
 
 namespace Resume_Analyzer.Service.IServices
 {
     public interface IResumeService
     {
         public Task UploadResume(IFormFile resumeFile, string userId);
-        public Task<Resume> GetResume(string userId);
+        public Task<ResumeDTO> GetResume(string userId);
     }
 }

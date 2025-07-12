@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.DataAccess.Repositories;
+using Resume_Analyzer.Service.DTOs;
 using Resume_Analyzer.Service.IServices;
 using ServiceLayer.Exceptions;
 
@@ -15,10 +17,13 @@ namespace Resume_Analyzer.Service.Services
     {
         private readonly IResumeRepository _resumeRepository;
         private readonly IResumeParserService _resumeParserService;
-        public ResumeService(IResumeRepository resumeRepository, IResumeParserService resumeParserService)
+        private readonly IMapper _mapper;
+
+        public ResumeService(IResumeRepository resumeRepository, IResumeParserService resumeParserService, IMapper mapper)
         {
             _resumeRepository = resumeRepository;
             _resumeParserService = resumeParserService;
+            _mapper = mapper;
         }
         private async Task<Resume> CreateResume(string userId, string content)
         {
@@ -58,14 +63,15 @@ namespace Resume_Analyzer.Service.Services
             Resume resume = await CreateResume(userId, content);
             await _resumeRepository.AddResume(resume);
         }
-        public async Task<Resume> GetResume(string userId)
+        public async Task<ResumeDTO> GetResume(string userId)
         {
             Resume resume = await _resumeRepository.GetUserResume(userId);
-            if(resume == null)
+            ResumeDTO resumeDTO = _mapper.Map<ResumeDTO>(resume);
+            if (resume == null)
             {
                 throw new NotFoundException("Resume not found");
             }
-            return resume;
+            return resumeDTO;
         }
     }
 }

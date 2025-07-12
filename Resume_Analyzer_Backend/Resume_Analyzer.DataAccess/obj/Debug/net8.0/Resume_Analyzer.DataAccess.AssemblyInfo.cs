@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Resume_Analyzer.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05252470c9babbe331e65a278487e3efb14c5ae1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b076ac1472a9eeeda467fca22ab44540a41ed4ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Resume_Analyzer.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Resume_Analyzer.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

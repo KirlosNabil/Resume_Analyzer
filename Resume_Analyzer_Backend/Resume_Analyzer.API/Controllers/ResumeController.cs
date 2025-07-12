@@ -29,7 +29,7 @@ namespace Resume_Analyzer.API.Controllers
         public async Task<IActionResult> GetResume()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            Resume resume = await _resumeService.GetResume(userId);
+            ResumeDTO resume = await _resumeService.GetResume(userId);
             return Ok(resume);
         }
     }

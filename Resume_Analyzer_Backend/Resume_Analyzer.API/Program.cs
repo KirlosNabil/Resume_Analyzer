@@ -6,6 +6,7 @@ using Resume_Analyzer.DataAccess;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.DataAccess.Repositories;
 using Resume_Analyzer.Service.IServices;
+using Resume_Analyzer.Service.Mappers;
 using Resume_Analyzer.Service.Middlewares;
 using Resume_Analyzer.Service.Services;
 using System.Text;
@@ -53,6 +54,7 @@ namespace Resume_Analyzer.API
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IResumeService, ResumeService>();

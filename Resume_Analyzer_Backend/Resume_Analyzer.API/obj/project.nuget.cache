@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UCHWGQgLkWBqd4saoPXDLUt6hRRRUa024pL9vT785yGrPIVvCFLWMt3D3oHOftbvCmO+xYI4cInVvV9ic911AQ==",
+  "dgSpecHash": "fLTuibdq4nAN0emA6VcZZw7+DdaxlUwf3J8ABjJYLcYpyVFo3S9AwdxLXPJW1mEdkhiyuxLlzawQ4Jq+meh9KA==",
   "success": true,
   "projectFilePath": "K:\\Side Projects\\Resume_Analyzer\\Resume_Analyzer_Backend\\Resume_Analyzer.API\\Resume_Analyzer.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kirlos Nabil\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Kirlos Nabil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Kirlos Nabil\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Kirlos Nabil\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Kirlos Nabil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
