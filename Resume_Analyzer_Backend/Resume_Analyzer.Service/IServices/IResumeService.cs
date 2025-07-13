@@ -15,5 +15,6 @@ namespace Resume_Analyzer.Service.IServices
         public Task<ResumeDTO> GetResume(string userId);
         public Task UpdateResume(IFormFile resumeFile, string userId);
         public Task DeleteResume(string userId);
+        public Task<ResumeAIResultDTO> MatchResumeJob(string userId);
     }
 }

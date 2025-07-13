@@ -46,5 +46,12 @@ namespace Resume_Analyzer.API.Controllers
             await _resumeService.DeleteResume(userId);
             return Ok("Resume deleted successfully");
         }
+        [HttpGet("match-resume-job")]
+        public async Task<IActionResult> MatchResumeJob()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ResumeAIResultDTO result = await _resumeService.MatchResumeJob(userId);
+            return Ok(result);
+        }
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using Resume_Analyzer.DataAccess;
 using Resume_Analyzer.DataAccess.Models;
 using Resume_Analyzer.DataAccess.Repositories;
+using Resume_Analyzer.Service.Configurations;
 using Resume_Analyzer.Service.IServices;
 using Resume_Analyzer.Service.Mappers;
 using Resume_Analyzer.Service.Middlewares;
@@ -51,6 +52,10 @@ namespace Resume_Analyzer.API
                 };
             });
 
+
+            builder.Services.Configure<ResumeAIOptions>(
+                builder.Configuration.GetSection("ResumeAI"));
+
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -59,6 +64,7 @@ namespace Resume_Analyzer.API
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IResumeService, ResumeService>();
             builder.Services.AddScoped<IResumeParserService, ResumeParserService>();
+            builder.Services.AddScoped<IAIModelService, AIModelService>();
 
             builder.Services.AddScoped<IResumeRepository, ResumeRepository>();
 
