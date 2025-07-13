@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from utils import clean_resume
 
 app = FastAPI()
 
@@ -8,4 +9,5 @@ class ResumeInput(BaseModel):
 
 @app.post("/match")
 def match_resume(data: ResumeInput):
-    return {"message": "Resume received successfully"}
+    cleaned = clean_resume(data.resume)
+    return {"cleaned_text": cleaned}

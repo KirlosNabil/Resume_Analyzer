@@ -45,6 +45,18 @@
           "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:470693348:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ResumeService.cs",
@@ -54,8 +66,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\Services\\ResumeService.cs",
               "ViewState": "AQIAAHgAAAAAAAAAAAAAAIIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:30:39.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:30:39.036Z"
             },
             {
               "$type": "Document",
@@ -67,8 +78,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\Services\\AIModelService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:26:17.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:26:17.034Z"
             },
             {
               "$type": "Document",
@@ -80,8 +90,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\IServices\\IAIModelService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:25:39.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:25:39.251Z"
             },
             {
               "$type": "Document",
@@ -93,8 +102,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\DTOs\\ResumeAIRequestDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:23:09.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:23:09.768Z"
             },
             {
               "$type": "Document",
@@ -106,8 +114,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\DTOs\\ResumeAIResultDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:16:43.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T16:16:43.214Z"
             },
             {
               "$type": "Document",
@@ -119,20 +126,7 @@
               "RelativeToolTip": "Resume_Analyzer.API\\Program.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T16:10:56.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:470693348:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+              "WhenOpened": "2025-07-13T16:10:56.581Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "Resume_Analyzer.Service\\IServices\\IResumeService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T17:43:49.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T17:43:49.415Z"
             }
           ]
         }
