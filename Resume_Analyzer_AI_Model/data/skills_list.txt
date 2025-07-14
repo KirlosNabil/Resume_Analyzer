@@ -1,0 +1,328 @@
+python
+java
+c++
+javascript
+go
+rust
+c#
+ruby
+swift
+kotlin
+data structures and algorithms
+object-oriented programming (oop)
+functional programming
+design patterns
+version control
+git
+svn
+integrated development environments (ides)
+ide usage
+debugging
+troubleshooting
+api design
+api development
+rest
+graphql
+test-driven development (tdd)
+behavior-driven development (bdd)
+unit testing
+integration testing
+end-to-end testing
+refactoring
+code review
+clean code principles
+concurrency
+parallelism
+asynchronous programming
+performance optimization
+html5
+css3
+javascript (es6+)
+react
+angular
+vue.js
+state management
+redux
+vuex
+context api
+webpack
+babel
+vite
+responsive design
+cross-browser compatibility
+accessibility (a11y)
+user experience (ux) principles
+ui/ux design tools
+figma
+sketch
+adobe xd
+sass
+less
+npm
+yarn
+node.js/express
+django
+flask
+spring boot
+ruby on rails
+asp.net core
+postgresql
+mysql
+mongodb
+redis
+cassandra
+sql
+nosql databases
+orm (object-relational mapping)
+odm (object-document mapping)
+authentication
+authorization
+oauth
+jwt
+security best practices
+xss
+csrf prevention
+caching mechanisms
+rabbitmq
+kafka
+websockets
+ios
+android
+swift
+objective-c for ios
+kotlin
+java for android
+react native
+flutter
+xamarin
+mobile ui design
+mobile ux design
+mobile performance optimization
+offline data handling
+aws
+azure
+google cloud platform
+containerization
+docker
+kubernetes
+jenkins
+gitlab ci
+github actions
+azure devops
+circleci
+infrastructure as code (iac)
+terraform
+cloudformation
+ansible
+puppet
+chef
+bash
+shell scripting
+monitoring
+logging
+prometheus
+grafana
+elk stack
+splunk
+alerting systems
+dns
+http/s
+tcp/ip
+load balancing
+firewalls
+security groups
+virtualization
+vmware
+virtualbox
+serverless computing
+aws lambda
+azure functions
+google cloud functions
+gitops
+site reliability engineering (sre) principles
+disaster recovery planning
+database design
+normalization
+query optimization
+data warehousing
+etl (extract, transform, load) processes
+hadoop
+spark
+data streaming
+kinesis
+data governance
+data security
+tensorflow
+pytorch
+scikit-learn
+data preprocessing
+model training
+model evaluation
+deployment of ml models
+mlops
+natural language processing (nlp)
+computer vision
+deep learning
+reinforcement learning
+statistical modeling
+threat modeling
+vulnerability assessment
+penetration testing
+security auditing
+cryptography fundamentals
+identity and access management (iam)
+secure coding practices
+compliance
+gdpr
+hipaa
+scrum
+kanban
+waterfall model
+requirement gathering
+project planning
+risk management
+stakeholder management
+time management
+budgeting
+documentation
+release management
+problem solving
+analytical thinking
+communication (written and verbal)
+teamwork
+collaboration
+adaptability
+attention to detail
+critical thinking
+continuous learning
+mentorship
+leadership
+conflict resolution
+presentation skills
+empathy
+customer focus
+negotiation
+decision making
+creativity
+patience
+perseverance
+airflow
+junit
+keras
+linux
+matplotlib
+node
+numpy
+pandas
+postman
+powerbi
+prototyping
+routing
+selenium
+sklearn
+statistics
+switching
+tailwind
+testng
+typescript
+vpn
+wireframes
+xml
+microservices architecture
+event-driven architecture
+domain-driven design (ddd)
+distributed systems
+system design
+concurrency control
+network security
+data visualization
+data analysis
+business intelligence
+data modeling
+data pipelines
+container security
+cloud security
+observability
+tracing
+service mesh
+api gateway
+server administration
+regular expressions
+data serialization
+web security
+application security
+threat intelligence
+incident response
+forensics
+technical writing
+requirements engineering
+user stories
+acceptance criteria
+estimation
+coaching
+public speaking
+cross-functional collaboration
+change management
+quality assurance
+performance testing
+security testing
+usability testing
+a/b testing
+accessibility testing
+test automation
+continuous integration
+continuous delivery
+continuous deployment
+blue/green deployment
+canary deployments
+feature flags
+reverse proxies
+cdn (content delivery network)
+dns management
+virtual private clouds (vpc)
+circuit breakers
+queuing theory
+chaos engineering
+fault tolerance
+resilience engineering
+data privacy
+ethical ai
+explainable ai (xai)
+responsible ai
+vector databases
+graph databases
+time series databases
+data lakes
+data bricks
+snowflake
+dbt (data build tool)
+issue tracking
+manual testing
+operating systems
+api testing tools
+test frameworks
+blogging
+bugzilla
+cisco
+cocoa
+copywriting
+design
+dotnet
+employee
+erp
+excel
+financial
+forecasting
+grammar
+hrms
+modeling
+onboarding
+payroll
+recruitment
+relations
+seo
+studio
+user
+wordpress
+xcode
+xd

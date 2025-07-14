@@ -8,6 +8,6 @@ namespace Resume_Analyzer.Service.DTOs
 {
     public class ResumeAIRequestDTO
     {
-        public string Resume { get; set; }
+        public string resume { get; set; }
     }
 }

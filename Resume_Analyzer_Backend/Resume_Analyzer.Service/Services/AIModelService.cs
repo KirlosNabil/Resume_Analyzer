@@ -27,7 +27,7 @@ namespace Resume_Analyzer.Service.Services
 
             var payload = new ResumeAIRequestDTO
             {
-                Resume = resumeText
+                resume = resumeText
             };
 
             var content = new StringContent(
