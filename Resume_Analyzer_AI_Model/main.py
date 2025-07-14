@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from utils import clean_resume
 from schemas import ResumeAIRequest, ResumeAIResponse, PredictedJob
+import pandas as pd
 
 app = FastAPI()
 
