@@ -17,7 +17,8 @@ app = FastAPI()
 
 @app.post("/match", response_model=ResumeAIResponse)
 def match_resume(data: ResumeAIRequest):
-    skills_str = extract_skills_from_resume(data.resume)
+    skills = extract_skills_from_resume(data.resume)
+    skills_str = " ".join(skills)
     if not skills_str:
         return {"predicted_jobs": [], "skills": []}
     vector = vectorizer.transform([skills_str])
